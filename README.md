@@ -1,3 +1,5 @@
+[English](./README_EN.md)
+
 # PCL2 自动重启脚本 🚀
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)  

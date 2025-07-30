@@ -1,3 +1,5 @@
+[简体中文](./README.md)
+
 # PCL2 Auto-Restart Script 🚀
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)  

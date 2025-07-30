@@ -36,43 +36,39 @@ To run this script, make sure your environment meets the following conditions:
     ```
 
 ---
-## 🚀 Deployment
 
-This project is a pure Python script that can be run directly or packaged as a standalone executable (`.exe`) for Windows, allowing deployment without a Python environment.
+## 🚀 Deployment Instructions
 
-### 🧩 Steps:
-
-1. Install the required module (only needed if not packaging):
-
-   ## 🚀 Deployment
-
-This project is a pure Python script that can be run directly or packaged as a standalone executable (`.exe`) for Windows, allowing deployment without a Python environment.
+This project is a pure Python script. It can be run directly or packaged into a standalone executable (`.exe`) for Windows, allowing deployment without requiring a Python environment.
 
 ### 🧩 Steps:
 
-1. Install the required module (only needed if not packaging):
+1. Install dependencies (only required if not packaging):
 
- ```bash
- pip install psutil
- ```
+   ```bash
+   pip install psutil
+   ```
 
-2.	Use PyInstaller to convert the script into an .exe file:
+2. Use `PyInstaller` to package the script into a `.exe` file:
 
-```bash
-pip install pyinstaller
-```
+   ```bash
+   pip install pyinstaller
+   ```
 
-3.	Run the following command to package the script:
+3. Run the following command to generate the executable:
 
-```bash
-pyinstaller -F -i NONE your_script_name.py
-```
+   ```bash
+   pyinstaller -F -i NONE your_script_name.py
+   ```
 
-Explanation of the arguments:
-	•	-F: Packages the script into a single .exe executable (otherwise, multiple files will be output to dist/)
-	•	-i NONE: No icon is set (you can replace NONE with a .ico icon file if desired)
+   Explanation of parameters:
 
-4.	The final executable will appear in the dist/ folder. Copy your_script_name.exe to any Windows system to run.
+   - `-F`: Package into a single `.exe` file (otherwise outputs multiple files to the `dist/` folder)
+   - `-i NONE`: No icon specified (you may replace `NONE` with a `.ico` file path to add a custom icon)
 
-📄 License: MIT License
-See the LICENSE file in the root directory for details.
+4. The final executable will be located in the `dist/` directory. Copy `your_script_name.exe` to any Windows machine to run it directly.
+
+---
+
+📄 **License: MIT License**  
+Please see the [LICENSE](./LICENSE) file in the root of the repository for more details.
